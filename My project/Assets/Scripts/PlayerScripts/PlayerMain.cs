@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerMain : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // declaring variables
+    PlayerRotaions rotation;
+
     void Start()
     {
-        
+        GameObject body = GameObject.Find("PlayerBody");
+        rotation = body.GetComponent<PlayerRotaions>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        rotation.FaceMouse();
     }
 }
