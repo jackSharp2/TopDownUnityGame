@@ -5,17 +5,23 @@ using UnityEngine;
 public class PlayerMain : MonoBehaviour
 {
     // declaring variables
-    PlayerRotaions rotation;
+    public CharacterController controller;
+    private float speed = 5f;
 
     void Start()
     {
-        GameObject body = GameObject.Find("PlayerBody");
-        rotation = body.GetComponent<PlayerRotaions>();
+        
     }
 
 
     void Update()
     {
-        rotation.FaceMouse();
+        
+    }
+
+    //simple movement script
+    public void Movement(Vector3 direction)
+    {
+        controller.Move(direction * speed * Time.deltaTime);
     }
 }
