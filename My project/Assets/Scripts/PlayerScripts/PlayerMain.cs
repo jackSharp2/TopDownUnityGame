@@ -8,17 +8,6 @@ public class PlayerMain : MonoBehaviour
     public CharacterController controller;
     private float speed = 5f;
 
-    void Start()
-    {
-        
-    }
-
-
-    void Update()
-    {
-        
-    }
-
     //simple movement script
     public void Movement(Vector3 direction)
     {

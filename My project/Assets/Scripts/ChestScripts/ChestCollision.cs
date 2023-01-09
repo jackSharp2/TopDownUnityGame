@@ -9,25 +9,24 @@ public class ChestCollision : MonoBehaviour
     GeneratIteams iteams;
     void Start()
     {
-        chest = GameObject.Find("ResorseChests");
+        chest = GameObject.Find("LargeChest");
         iteams = chest.GetComponent<GeneratIteams>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     void OnCollisionEnter(Collision collision)
     {
         // Get the tag of the colliding object
+        // Destroy(chest);
         string tag = collision.gameObject.tag;
-
         if (tag == "Player")
         {
-            Destroy(chest);
             iteams.getDrops(chest);
+            Destroy(chest);
         }
     }
 }
