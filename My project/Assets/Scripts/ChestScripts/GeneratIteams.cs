@@ -36,16 +36,16 @@ public class GeneratIteams : MonoBehaviour
                 //weapons = 0
                 if (DropType == 0)
                 {
-                    //legendary = 6%, epic = 16%, rare = 36%, common = 42%
-                    if (DropRarity <= 3)
+                    //legendary = 10%, epic = 20%, rare = 40%, common = 30%
+                    if (DropRarity <= 5)
                     {
                         Instantiate(legendary, DropRange, Quaternion.identity);
                     }
-                    else if (DropRarity <= 8)
+                    else if (DropRarity <= 10)
                     {
                         Instantiate(epic, DropRange, Quaternion.identity);
                     }
-                    else if (DropRarity <= 18)
+                    else if (DropRarity <= 20)
                     {
                         Instantiate(rare, DropRange, Quaternion.identity);
                     }
