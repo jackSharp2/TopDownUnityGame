@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChestCollision : MonoBehaviour
+public class LargeChestCollision : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject chest;
