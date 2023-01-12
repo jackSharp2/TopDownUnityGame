@@ -29,8 +29,8 @@ public class GeneratIteams : MonoBehaviour
                 //getting the type and value of each iteam
                 DropType = Random.Range(0, 5);
                 DropRarity = Random.Range(0, 50);
-                DropXChange = Random.Range(-2f, 2f);
-                DropZChange = Random.Range(-2f, 2f);
+                DropXChange = Random.Range(-1f, 1f);
+                DropZChange = Random.Range(-1f, 1f);
                 DropRange = new Vector3(chest.transform.position.x + DropXChange, chest.transform.position.y, chest.transform.position.z + DropZChange);
 
                 //weapons = 0
@@ -85,8 +85,8 @@ public class GeneratIteams : MonoBehaviour
                 //getting the type and value of each iteam
                 DropType = Random.Range(0, 5);
                 DropRarity = Random.Range(0, 50);
-                DropXChange = Random.Range(-2f, 2f);
-                DropZChange = Random.Range(-2f, 2f);
+                DropXChange = Random.Range(-1f, 1f);
+                DropZChange = Random.Range(-1f, 1f);
                 DropRange = new Vector3(chest.transform.position.x + DropXChange, chest.transform.position.y, chest.transform.position.z + DropZChange);
 
                 //weapons = 0
