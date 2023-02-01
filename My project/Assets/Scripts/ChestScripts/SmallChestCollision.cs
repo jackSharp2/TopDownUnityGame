@@ -24,7 +24,7 @@ public class SmallChestCollision : MonoBehaviour
         string tag = collision.gameObject.tag;
         if (tag == "Player")
         {
-            iteams.getDrops(chest);
+            iteams.getDrops(chest,0);
             Destroy(chest);
         }
     }

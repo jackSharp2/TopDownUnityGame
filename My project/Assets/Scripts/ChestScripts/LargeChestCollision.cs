@@ -7,10 +7,14 @@ public class LargeChestCollision : MonoBehaviour
     // Start is called before the first frame update
     GameObject chest;
     GeneratIteams iteams;
+    GameObject player;
+    PlayerMain playermain;
     void Start()
     {
+        player = GameObject.Find("Player");
         chest = GameObject.Find("LargeChest");
         iteams = chest.GetComponent<GeneratIteams>();
+        playermain = player.GetComponent<PlayerMain>();
     }
 
     // Update is called once per frame
@@ -25,7 +29,8 @@ public class LargeChestCollision : MonoBehaviour
         string tag = collision.gameObject.tag;
         if (tag == "Player")
         {
-            iteams.getDrops(chest);
+            int luck = playermain.GetStats(1);
+            iteams.getDrops(chest, luck);
             Destroy(chest);
         }
     }

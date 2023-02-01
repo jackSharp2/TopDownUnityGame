@@ -18,12 +18,12 @@ public class GeneratIteams : MonoBehaviour
     public GameObject rare;
     public GameObject common;
 
-    public void getDrops(GameObject chest) 
+    public void getDrops(GameObject chest, int luck) 
     {
         if (chest.tag == "LargChest")
         {
             //getting the amount i want to drop
-            DropAmount = Random.Range(0, 10);
+            DropAmount = Random.Range(1* luck, 10 *luck);
             for (int i = 0; i <= DropAmount; i++)
             {
                 //getting the type and value of each iteam
@@ -79,7 +79,7 @@ public class GeneratIteams : MonoBehaviour
         else if (chest.tag == "SmallChest") 
         {
             //getting the amount i want to drop
-            DropAmount = Random.Range(0, 5);
+            DropAmount = Random.Range(1 * luck, 5 * luck);
             for (int i = 0; i <= DropAmount; i++)
             {
                 //getting the type and value of each iteam
