@@ -1,27 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Collections : MonoBehaviour
 {
-    public Text counterText;
-    public float counter;
+    public TMPro.TMP_Text matterialText;
+    public int num = 10;
+
+    void Awake()
+    {
+        matterialText = GameObject.Find("ItemSlot").GetComponentInChildren<TextMeshProUGUI>();
+    }
 
     public void Update()
     {
-        counterText.text = counter.ToString();
+
+        matterialText.text = "" + num;
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        // Get the tag of the colliding object
-        // Destroy(chest);
-        string tag = collision.gameObject.tag;
-        if (tag == "Player")
-        {
-            int luck = playermain.GetStats(1);
-            iteams.getDrops(chest, luck);
-            Destroy(chest);
-        }
-    }
 }
