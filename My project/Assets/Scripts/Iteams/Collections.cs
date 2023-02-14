@@ -1,23 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+
 
 public class Collections : MonoBehaviour
 {
-    public TMPro.TMP_Text matterialText;
-    public int num = 10;
 
-    void Awake()
+    GetItem getitem;
+
+    void start() 
     {
-        matterialText = GameObject.Find("ItemSlot").GetComponentInChildren<TextMeshProUGUI>();
+        GameObject gameManager = GameObject.Find("GameManager");
+        getitem = gameManager.GetComponent<GetItem>();
     }
-
-    public void Update()
+    void OnCollisionEnter(Collision collision)
     {
-
-        matterialText.text = "" + num;
+        // Get the tag of the colliding object
+        string tag = collision.gameObject.tag;
+        if (tag == "Player")
+        {
+            getitem.getType(1);
+        }
     }
 
 }
