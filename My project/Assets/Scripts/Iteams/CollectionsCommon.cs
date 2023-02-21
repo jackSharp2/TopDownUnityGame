@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Collections: MonoBehaviour
+public class CollectionsCommon : MonoBehaviour
 {
 
     GetItem item;
@@ -20,7 +20,7 @@ public class Collections: MonoBehaviour
         string tag = collision.gameObject.tag;
         if (tag == "Player")
         {
-            item.getType(5);
+            item.getType(1);
         }
     }
 

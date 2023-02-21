@@ -8,6 +8,10 @@ public class GetItem : MonoBehaviour
 
     [SerializeField]
     public TMPro.TextMeshProUGUI matTextCommon;
+    [SerializeField]
+    public TMPro.TextMeshProUGUI matTextRare;
+    int rareAmount = 0;
+    int commonAmount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +24,24 @@ public class GetItem : MonoBehaviour
         
     }
 
-    public void getType(int type) 
+    public int getType(int type) 
     {
         Debug.Log("test");
-        if (type < 0)
+        switch (type) 
         {
-            matTextCommon.text = "Enter Your Text Here";
+            case 1:
+                commonAmount += 1;
+                matTextCommon.text = "" + commonAmount;
+                break;
+            case 2:
+                rareAmount += 1;
+                matTextRare.text = "" + rareAmount;
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
         }
-        else 
-        {
-            matTextCommon.text = "Enter Your Text Here";
-        }
+        return 1;
     }
 }
