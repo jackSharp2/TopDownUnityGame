@@ -7,11 +7,12 @@ public class CollectionsRare : MonoBehaviour
 {
 
     GetItem item;
-
+    GameObject parent;
     void Start() 
     {
         GameObject gameManager = GameObject.Find("GameManager");
         item = gameManager.GetComponent<GetItem>();
+        parent = transform.root.gameObject;
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -20,6 +21,7 @@ public class CollectionsRare : MonoBehaviour
         string tag = collision.gameObject.tag;
         if (tag == "Player")
         {
+            Destroy(parent);
             item.getType(2);
         }
     }
