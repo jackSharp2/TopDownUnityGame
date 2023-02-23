@@ -13,6 +13,13 @@ public class PlayerAttacking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Held");
+        }
+        else
+        {
+            Debug.Log("Not held");
+        }
     }
 }
