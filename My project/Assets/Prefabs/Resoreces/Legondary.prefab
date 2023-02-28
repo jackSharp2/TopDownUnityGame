@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7592193592962697503}
   - component: {fileID: 3532949445269464532}
   - component: {fileID: 6376902430479525336}
-  - component: {fileID: 8170102631758915388}
   m_Layer: 0
   m_Name: Mattierial
   m_TagString: Untagged
@@ -98,18 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8170102631758915388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49681651511209353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f84c6eda738edc449b84174cafadd9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1011995073097111562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,10 +5016,10 @@ GameObject:
   - component: {fileID: 4959468362035602555}
   - component: {fileID: 8982469231293107776}
   - component: {fileID: 4887905622403087621}
-  - component: {fileID: 1811028077956578132}
+  - component: {fileID: 8524285733066432586}
   m_Layer: 0
   m_Name: Legondary
-  m_TagString: Untagged
+  m_TagString: Legondary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9864,7 +9851,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1811028077956578132
+--- !u!114 &8524285733066432586
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9873,7 +9860,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5371671277863668273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6233d5fe9a633ec4b94bd96cbfba05e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d39f46c6bf63d441880ee1943165756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6833110482181349333

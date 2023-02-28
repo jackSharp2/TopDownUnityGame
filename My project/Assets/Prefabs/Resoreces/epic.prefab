@@ -5002,10 +5002,10 @@ GameObject:
   - component: {fileID: 4959468362035602555}
   - component: {fileID: 8442610515253868436}
   - component: {fileID: 3324446181363138133}
-  - component: {fileID: 6858049577000862151}
+  - component: {fileID: 7213119130848594789}
   m_Layer: 0
   m_Name: epic
-  m_TagString: Untagged
+  m_TagString: Epic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9837,7 +9837,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6858049577000862151
+--- !u!114 &7213119130848594789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9846,7 +9846,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5371671277863668273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce856a9ebac0a842ae5554bc717016d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d39f46c6bf63d441880ee1943165756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6833110482181349333

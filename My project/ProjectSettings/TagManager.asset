@@ -6,6 +6,10 @@ TagManager:
   tags:
   - LargChest
   - SmallChest
+  - Rare
+  - Legondary
+  - Epic
+  - Common
   layers:
   - Default
   - TransparentFX

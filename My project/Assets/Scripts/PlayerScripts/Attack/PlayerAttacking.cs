@@ -14,12 +14,8 @@ public class PlayerAttacking : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Held");
-        }
-        else
-        {
-            Debug.Log("Not held");
-        }
+            print("Pressed");
+        else if (Input.GetMouseButtonUp(0))
+            print("Released");
     }
 }
