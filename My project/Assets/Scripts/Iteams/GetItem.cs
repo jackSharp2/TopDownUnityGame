@@ -14,7 +14,7 @@ public class GetItem : MonoBehaviour
     public TMPro.TextMeshProUGUI matTextEpic;
     [SerializeField]
     public TMPro.TextMeshProUGUI matTextLegondary;
-
+    //common, rare, epic, legond
     int[] ItemAmounts = { 0, 0, 0, 0 };
     // Start is called before the first frame update
     void Start()

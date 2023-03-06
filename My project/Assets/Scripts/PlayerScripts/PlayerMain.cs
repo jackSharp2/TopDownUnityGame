@@ -6,18 +6,25 @@ public class PlayerMain : MonoBehaviour
 {
     // declaring variables
     public CharacterController controller;
+    public int statChange = 0;
     private float movementSpeed = 5;
-    private int speed = 0;
-    private int luck = 1;
-    private int health = 100;
-    private int damage = 10;
-    private int critChance = 5;
-    private int critDamage = 2;
+    //crit, luck , health, dmg, crit chance
+    private int[] skills = {2, 1, 100, 10, 5};
 
+    void start() 
+    {
+    }
     //simple movement script
     public void Movement(Vector3 direction)
     {
         controller.Move(direction * movementSpeed * Time.deltaTime);
+    }
+
+    public void ChangeStats(int stat, int statChange)
+    {
+
+        stat = GetStats(stat);
+        stat += statChange;
     }
 
     public int GetStats(int stat) 
@@ -25,22 +32,15 @@ public class PlayerMain : MonoBehaviour
         switch (stat) 
         {
             case 0:
-                return speed;
-
+                return skills[stat];
             case 1:
-                return luck;
-
+                return skills[stat];
             case 2:
-                return health;
-
+                return skills[stat];
             case 3:
-                return damage;
-
+                return skills[stat];
             case 4:
-                return critChance;
-
-            case 5:
-                return critDamage;
+                return skills[stat];
         }
         return 0;
     }
